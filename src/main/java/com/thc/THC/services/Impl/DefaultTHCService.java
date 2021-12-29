@@ -1,6 +1,7 @@
 package com.thc.THC.services.Impl;
 
 import com.thc.THC.models.Location;
+import com.thc.THC.models.Reservation;
 import com.thc.THC.repository.THCRepository;
 import com.thc.THC.services.THCService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,4 +39,5 @@ public class DefaultTHCService implements THCService {
     public void deleteLocation(Location location) {
         thcRepository.delete(location);
     }
+
 }
