@@ -26,9 +26,9 @@ public class DefaultReservationService implements ReservationService {
     }
 
     @Override
-    public boolean deleteReservation(Reservation reservation) {
-        reservationRepository.delete(reservation);
-        System.out.println(reservation);
+    public boolean deleteReservation(Long id) {
+        reservationRepository.deleteById(id);
+        System.out.println(id);
         return true;
     }
 
